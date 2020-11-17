@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4 лаба</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<div class="row">
+    <div class="col s12 m3">
+      <div class="card  teal accent-1">
+        <div class="card-content">
+          <span class="card-title">общ. 1 задание</span>
+          <p>для проверки смотрите console</p>
+        </div>
+        <div class="card-action">
+          	<a class="waves-effect waves-light btn" id="btn1">start</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m3">
+      <div class="card green accent-1">
+        <div class="card-content">
+          <span class="card-title">общ. 2 задание</span>
+          <p>для проверки смотрите console</p>
+        </div>
+        <div class="card-action">
+        	<div class="input-field col s12">
+          		<input type="number" id="zad2" class="validate">
+          			<label for="number">число</label>
+          		<span class="helper-text" data-error="wrong" data-success="right"></span>
+        	</div>
+          	<a class="waves-effect waves-light btn" id="btn2">start</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m3">
+      <div class="card cyan accent-1">
+        <div class="card-content">
+          <span class="card-title">общ. 3 задание</span>
+          <p>тут использовался alert</p>
+        </div>
+        <div class="card-action">
+          <div class="input-field col s12">
+              <input type="number" id="zad3" class="validate">
+                <label for="number">число</label>
+              <span class="helper-text" data-error="wrong" data-success="right"></span>
+          </div>
+          <div class="input-field col s12">
+              <input type="number" id="zad31" class="validate">
+                <label for="number">число</label>
+              <span class="helper-text" data-error="wrong" data-success="right"></span>
+          </div>
+          <a class="waves-effect waves-light btn" id="btn3">start</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m3">
+      <div class="card  light-blue accent-1">
+        <div class="card-content">
+          <span class="card-title">общ. 4 задание</span>
+          <p>тут использовался alert</p>
+        </div>
+        <div class="card-action">
+          <div class="input-field col s12">
+              <input type="number" id="zad4" class="validate">
+                <label for="number">число</label>
+              <span class="helper-text" data-error="wrong" data-success="right"></span>
+          </div>
+          <a class="waves-effect waves-light btn" id="btn4">start</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m3">
+      <div class="card green accent-1">
+        <div class="card-content">
+          <span class="card-title">общ. 5 задание</span>
+          <p>тут использовался alert</p>
+        </div>
+        <div class="card-action">
+          <div class="input-field col s12">
+              <input type="number" id="zad5" class="validate">
+                <label for="number">число</label>
+              <span class="helper-text" data-error="wrong" data-success="right"></span>
+          </div>
+            <a class="waves-effect waves-light btn" id="btn5">start</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript" src="lab4_2.js"></script>
+<script type="text/javascript" src="lab4_1.js"></script>
+<script type="text/javascript" src="lab4_3.js"></script>
+<script type="text/javascript" src="lab4_4.js"></script>
+<script type="text/javascript" src="lab4_5.js"></script>
+<script type="text/javascript">
+  $( "#btn1" ).click(function() {
+    zadanie1();
+  });
+  $( "#btn2" ).click(function() {
+    zadanie2($("#zad2").val());
+  });
+  $( "#btn3" ).click(function() {
+    zadanie3($("#zad3").val(),$("#zad31").val());
+  });
+  $( "#btn4" ).click(function() {
+    zadanie4($("#zad4").val());
+  });
+  $( "#btn5" ).click(function() {
+    zadanie5($("#zad5").val());
+  });
+</script>         
+</body>
+</html>
